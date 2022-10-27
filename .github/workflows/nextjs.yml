@@ -22,7 +22,7 @@ jobs:
       id: changed-files-for-dir1
       uses: tj-actions/changed-files@v34
       with:
-        path: docs/
+        path: /docs/
     
     - name: List all added files in dir1
       run: |
