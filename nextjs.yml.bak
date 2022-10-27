@@ -20,7 +20,8 @@ jobs:
 
         - name: Build
           run: |
-            mv .next/* out/
+            npm ci
+            npm run export
             touch out/.nojekyll
 
         - name: Deploy
