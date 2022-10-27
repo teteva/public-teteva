@@ -20,8 +20,9 @@ jobs:
 
         - name: Build
           run: |
-            npm ci
-            npm run export
+						npm ci
+						npm run build
+						npm run export
             touch out/.nojekyll
 
         - name: Deploy
@@ -30,4 +31,3 @@ jobs:
           with:
             branch: gh-pages
             folder: out
-			
