@@ -14,12 +14,11 @@ jobs:
   
         - name: Build
           run: |
-            mv .next/* out/
-            touch out/.nojekyll
+            touch next/.nojekyll
 
         - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
           uses: JamesIves/github-pages-deploy-action 
           with:
             branch: gh-pages
-            folder: out
+            folder: next
